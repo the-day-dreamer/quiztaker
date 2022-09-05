@@ -1,0 +1,50 @@
+<!-- creating an online quiz app -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiztaker app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="nav__title">quiz<span>taker</span></div>
+    </header>
+    <main>
+        <section class="ball1"></section>
+        <section class="ball2"></section>
+        <section class="ball3"></section>
+
+        <section class="section__title">
+            <p>welcome to quiz<span>taker</span></p>
+        </section>
+        <section class="section__subtitle">
+            <p>best online platform to take quizzes </p>
+        </section>
+        <div class="start__btn">
+            <button class="start__btn1"><a href="quiz.html" target="_blank">Get started</a><i class="uil uil-arrow-right icon__right"></i></button>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="social__icon">
+            <a href="https://www.instagram.com/aman.daydreamer/" target="_blank"><i class="uil uil-instagram instagram"></i></a>
+            <a href="https://twitter.com/Aman72709384" target="_blank"><i class="uil uil-twitter-alt twitter"></i></a>
+            <a href="https://github.com/the-day-dreamer" target="_blank"><i class="uil uil-github-alt github"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        gsap.from('.section__subtitle',{opacity:0,x:-50,duration:2});
+        gsap.from('.start__btn1',{opacity:0,y:150,duration:2});
+        gsap.from('.section__title',{opacity:0,y:-50,duration:2});
+        
+
+
+    </script>
+</body>
+</html>

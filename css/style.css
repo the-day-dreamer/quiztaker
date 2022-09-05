@@ -1,0 +1,141 @@
+/* defining the root variables necessary for making the project */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+:root{
+    --first-color:#1B1464;
+    --second-color:#686de0;
+    --text-color-1:#dff9fb;
+    --text-color-2:#FDA7DF;
+    /* font sizes */
+    --large-font-size:2rem;
+    --medium-font-size:1.5rem;
+    --normal-font-size:1rem;
+    --font-family:'Lemon', cursive;
+}
+@media screen and (min-width:767px){
+    :root{
+        --large-font-size:2.5rem;
+        --medium-font-size:2rem;
+        --normal-font-size:1.5rem;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: var(--first-color);
+
+}
+.nav__title{
+    color: var(--text-color-1);
+    font-family: var(--font-family);
+    padding: 1rem;
+}
+.nav__title span{
+    color: var(--text-color-2);
+}
+.section__title,
+.section__subtitle,
+.start__btn{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+.section__title{
+    font-family: var(--font-family);
+    font-size: 3rem;
+    color: var(--text-color-1);
+}
+.section__subtitle{
+    font-family: var(--font-family);
+    color: var(--text-color-1);
+}
+.section__title p span{
+    color: var(--text-color-2);
+}
+.start__btn button{
+    background: linear-gradient(to bottom right,
+                                var(--text-color-1),
+                                var(--text-color-2));
+    padding: .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+.start__btn button a{
+    font-size: 1.5rem;
+    color: #000000;
+}
+.icon__right{
+    font-size: 1.5rem;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 1rem;
+    
+}
+.social__icon{
+    text-align: center;
+    
+}
+.instagram{
+    font-size: 2rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+}
+.twitter{
+    font-size: 2rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+
+
+}
+.github{
+    font-size: 2rem;
+    color: var(--text-color-1);
+    padding: 1rem;
+
+
+}
+.instagram:hover{
+    color:pink;
+}
+.twitter:hover{
+    color: aqua;
+}
+.github:hover{
+    color: green;
+}
+.ball1{
+    background-color: var(--text-color-1);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top: -2rem;
+    left: -2rem;
+    z-index: -1;
+    filter: blur(200px);
+}
+.ball2{
+    background-color: var(--text-color-2);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -2rem;
+    right: -2rem;
+    z-index: -1;
+    filter: blur(200px);
+}

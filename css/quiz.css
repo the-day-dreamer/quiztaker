@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --first-color:#1B1464;
+    --second-color:#686de0;
+    --text-color-1:#dff9fb;
+    --text-color-2:#FDA7DF;
+    /* font sizes */
+    --large-font-size:2rem;
+    --medium-font-size:1.5rem;
+    --normal-font-size:1rem;
+    --font-family:'Poppins', sans-serif;
+}
+@media screen and (min-width:767px){
+    :root{
+        --large-font-size:2.5rem;
+        --medium-font-size:2rem;
+        --normal-font-size:1.5rem;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 1.5rem 1.5rem ;
+    width: 100%;
+    
+}
+.question{
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+}
+.option{
+    margin-top: 1rem;
+}
+.option ul li{
+    margin-top: .4rem;
+    font-family: var(--font-family);
+
+}
+body{
+    background-color: var(--text-color-1);
+    overflow: hidden;
+}
+.arrow__left,
+.arrow__right{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.icons{
+    position: fixed;
+    /* height:70vh; */
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow__left:hover{
+    color: #1B1464;
+}
+.arrow__right:hover{
+    color: #1B1464;
+}
+.submit__btn{
+    background-color: #1B1464;
+    color: #dff9fb;
+    padding: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.show__result{
+    /* margin-top: 2rem; */
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 2rem;
+    /* display: none; */
+    border-radius: 1rem;
+    box-shadow: 0 6px 6px #000000;
+}
+.abc{
+    display: none;
+}
+.play__again{
+    background-color: #1B1464;
+    padding: .5rem;
+    color: var(--text-color-1);
+    border-radius: .4rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+#option1,
+#option2,
+#option3,
+#option4{
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiztaker</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="question" id="question">
+            question goes here
+        </div>
+        <div class="option">
+            <ul class="option__ul">
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1">option1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">option2</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer">
+                    <label for="ans3" id="option3">option3</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4">option4</label>     
+                </li>
+            </ul>
+        </div>
+        <div class="show__result abc" id="show-result"></div>
+    </div>
+    <div class="icons">
+        <i class="uil uil-arrow-left arrow__left" id="arrow-left"></i>
+        <button class="submit__btn" id="submit-btn">SAVE AND NEXT</button>
+        <button class="submit__btn" id="submit-btn1">SUBMIT</button>
+        <button class="submit__btn" id="clear">CLEAR</button>
+        <i class="uil uil-arrow-right arrow__right" id="arrow-right"></i>
+    </div>
+    <script src="js/script.js"></script>
+   
+</body>
+
+</html>
